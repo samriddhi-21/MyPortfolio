@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samriddhi Gupta - Resume</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background fallback */
+        }
+
+        /* Fullscreen background image with overlay */
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./images/here.webp'); /* Placeholder - Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* For parallax effect */
+            z-index: -1; /* Send it behind other content */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Darker overlay for text readability */
+        }
+
+        /* Animation for content fade-in */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animated-content {
+            animation: fadeIn 1s ease-out forwards;
+            animation-delay: 0.3s; /* Delay the animation slightly */
+            opacity: 0; /* Start invisible */
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+    <!-- Background Image Container -->
+    <div class="background-container">
+        <div class="overlay"></div>
+    </div>
+
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-4xl w-full bg-white shadow-lg rounded-lg p-8 sm:p-10 md:p-12 animated-content">
+            <!-- Header Section -->
+            <header class="text-center mb-8">
+                <!-- Profile Picture -->
+                <img src="./images/MyImage.jpeg" alt="Profile Picture" class="mx-auto rounded-full h-36 w-36 object-cover mb-4 shadow-md">
+                <h1 class="text-4xl font-extrabold text-gray-900 mb-2 rounded-md">Samriddhi Gupta</h1>
+                <p class="text-xl text-gray-600 rounded-md">Currently Pursuing B.Tech in Computer Science Engineering at Thapar Institute of Information Technology, Patiala</p>
+            </header>
+
+            <!-- About Me Section -->
+            <section class="mb-8 p-6 bg-blue-50 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 rounded-md">About Me</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    I am a passionate and dedicated learner, currently pursuing my B.Tech in Computer Science Engineering. With a keen interest in problem-solving and a strong foundation in C, C++, HTML, CSS, and JavaScript, I am always eager to explore new technologies and challenges. I aspire to leverage my skills and knowledge to make a positive impact at every possible level, contributing to innovative solutions and meaningful projects.
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="mb-8 p-6 bg-cyan-50 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 rounded-md">Skills</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                    <li class="rounded-md">C | C++</li>
+                    <li class="rounded-md">Basic HTML | CSS | JavaScript</li>
+                </ul>
+            </section>
+
+            <!-- Education Section -->
+            <section class="mb-8 p-6 bg-teal-50 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 rounded-md">Education</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                    <li class="rounded-md"><strong>B.Tech in Computer Science Engineering</strong>, Thapar Institute of Information Technology, Patiala (Currently Pursuing)</li>
+                </ul>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="mb-8 p-6 bg-orange-50 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 rounded-md">Projects</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                    <li class="rounded-md"><strong>Project Title One:</strong> A brief description of your project and your role. <a href="#" class="text-blue-600 hover:underline">Link to Project</a> (Optional)</li>
+                    <li class="rounded-md"><strong>Project Title Two:</strong> Another project description. Highlight technologies used.</li>
+                </ul>
+            </section>
+
+            <!-- Experiences Section -->
+            <section class="mb-8 p-6 bg-green-50 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 rounded-md">Experiences</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                    <li class="rounded-md">Led my school cabinet as Head Girl, from 2022-2024</li>
+                    <li class="rounded-md">Core Member: MUDRA tiet</li>
+                    <li class="rounded-md">Core Member: ACM Thapar</li>
+                </ul>
+            </section>
+
+            <!-- Achievements Section -->
+            <section class="mb-8 p-6 bg-yellow-50 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 rounded-md">Achievements</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                    <li class="rounded-md">District Topper: CBSE 10</li>
+                    <li class="rounded-md">District and Zonal Topper: CBSE 12</li>
+                </ul>
+            </section>
+
+            <!-- Languages Section -->
+            <section class="mb-8 p-6 bg-purple-50 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 rounded-md">Languages</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                    <li class="rounded-md">Proficiency in English and Hindi</li>
+                </ul>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="p-6 bg-red-50 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 rounded-md">Contact</h2>
+                <ul class="text-lg text-gray-700 space-y-2">
+                    <li class="rounded-md"><strong>Phone:</strong> 9897424003</li>
+                    <li class="rounded-md"><strong>Email:</strong> <a href="mailto:samriddhi.21g@gmail.com" class="text-blue-600 hover:underline">samriddhi.21g@gmail.com</a></li>
+                    <li class="rounded-md"><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/samriddhi-gupta-4292b0345" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/samriddhi-gupta-4292b0345</a></li>
+                </ul>
+            </section>
+
+            <!-- Download Resume Button -->
+            <div class="text-center mt-8">
+                <a href="path/to/your/resume.pdf" download="Samriddhi_Gupta_Resume.pdf" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    Download Resume (PDF)
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
